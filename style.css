@@ -1,0 +1,273 @@
+:root {
+  --red-ube: #A10E2F;
+  --dark-border: #65696B;
+  --bg-page: #F7F2EF;
+  --bg-card: #FFFFFF;
+  --text-dark: #1A1A1A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  padding-bottom: 40px;
+}
+
+/* Bandeau rouge supérieur */
+.top-banner {
+  height: 14px;
+  background-color: var(--red-ube);
+  width: 100%;
+}
+
+.page-container {
+  max-width: 1250px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #FDFBF9;
+  border: 2px solid var(--dark-border);
+  border-radius: 40px;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-height: 100px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-link.active {
+  color: var(--red-ube);
+  border-bottom: 2px solid var(--red-ube);
+  padding-bottom: 2px;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Tableau de Bord */
+.dashboard-block {
+  background-color: #FDFBF9;
+  border: 2px solid var(--dark-border);
+  border-radius: 40px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+}
+
+.dashboard-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kpi-card {
+  border: 1.5px solid var(--dark-border);
+  background-color: var(--bg-card);
+  padding: 18px 10px;
+  text-align: center;
+}
+
+.kpi-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.kpi-value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--red-ube);
+}
+
+.kpi-icon {
+  font-size: 1.3rem;
+}
+
+.kpi-label {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 6px;
+}
+
+/* Grand Cadre Rouge */
+.bottom-red-wrapper {
+  border: 2px solid var(--red-ube);
+  border-radius: 20px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 320px;
+  gap: 25px;
+}
+
+.column-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cartes Produits / Annonces */
+.product-item {
+  border: 1.5px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 15px;
+  background-color: #F8F5F2;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.product-thumb {
+  width: 120px;
+  height: 90px;
+  background-color: #888;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-content {
+  flex-grow: 1;
+}
+
+.info-line {
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: var(--red-ube);
+  color: #FFF;
+  border: none;
+}
+
+.btn-outline {
+  background-color: #E8E2DC;
+  color: #333;
+  border: 1.5px solid var(--dark-border);
+}
+
+/* Messagerie */
+.messaging-panel {
+  border: 1.5px solid var(--dark-border);
+  border-radius: 20px;
+  padding: 20px 15px;
+  background-color: #F5EFEB;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-new-msg {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--red-ube);
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.messages-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.msg-card {
+  border: 1.5px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #FDFBF9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.msg-avatar {
+  font-size: 1.4rem;
+}
+
+.msg-text h3 {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.msg-text p {
+  font-size: 0.8rem;
+  color: #555;
+}

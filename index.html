@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabShare UBE - Tableau de bord</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bandeau supérieur rouge UBE -->
+  <div class="top-banner"></div>
+
+  <div class="page-container">
+
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo-area">
+        <img src="logo.png" alt="Logo LabShare UBE" class="logo">
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="nav-link active">Accueil</a>
+        <a href="#" class="nav-link">Catalogue</a>
+        <a href="#" class="nav-link">Dépôt</a>
+      </nav>
+      <div class="user-icon" aria-hidden="true">👤</div>
+    </header>
+
+    <!-- Tableau de bord -->
+    <section class="dashboard-block">
+      <h1 class="dashboard-title">TABLEAU DE BORD - STATISTIQUES ET INDICATEURRS DU SERVICE</h1>
+      <div class="kpi-grid">
+        
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-value">142</span>
+            <span class="kpi-icon">🧰</span>
+          </div>
+          <p class="kpi-label">Équipements Disponibles</p>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-value">86</span>
+            <span class="kpi-icon">🔄</span>
+          </div>
+          <p class="kpi-label">Echanges Réalisés</p>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-value">18</span>
+            <span class="kpi-icon">🔬</span>
+          </div>
+          <p class="kpi-label">Laboratoires Connectés</p>
+        </div>
+
+        <div class="kpi-card">
+          <div class="kpi-header">
+            <span class="kpi-value">94%</span>
+            <span class="kpi-icon">☑️</span>
+          </div>
+          <p class="kpi-label">Demanndes Satisfaites</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Grand cadre à bordure rouge du bas -->
+    <div class="bottom-red-wrapper">
+      <div class="sections-grid">
+
+        <!-- Dernières Annonces -->
+        <section class="column-block">
+          <h2 class="column-title">Dernières Annonces</h2>
+          <div class="cards-stack">
+
+            <div class="product-item">
+              <div class="product-thumb">
+                <img src="image1.jpg" alt="Produits" class="product-img">
+              </div>
+              <div class="product-content">
+                <p class="info-line">🏷️ Prêt</p>
+                <p class="info-line">📍 UMR Chimie Dijon</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-red">Voir</button>
+                  <button type="button" class="btn btn-outline">Réserver</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-thumb">
+                <img src="image2.jpg" alt="Produits" class="product-img">
+              </div>
+              <div class="product-content">
+                <p class="info-line">🏷️ Vente</p>
+                <p class="info-line">📍 Labo Physique Nevers</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-red">Voir</button>
+                  <button type="button" class="btn btn-outline">Réserver</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Besoins Prioritaires -->
+        <section class="column-block">
+          <h2 class="column-title">Besoins Prioritaires</h2>
+          <div class="cards-stack">
+
+            <div class="product-item">
+              <div class="product-thumb">
+                <img src="image3.jpg" alt="Produits" class="product-img">
+              </div>
+              <div class="product-content">
+                <p class="info-line">🏷️ Don</p>
+                <p class="info-line">📍 Labo Physique</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-red">Voir</button>
+                  <button type="button" class="btn btn-outline">Réserver</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-thumb">
+                <img src="image4.jpg" alt="Produits" class="product-img">
+              </div>
+              <div class="product-content">
+                <p class="info-line">🏷️ Prêt</p>
+                <p class="info-line">📍 Labo Science</p>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-red">Voir</button>
+                  <button type="button" class="btn btn-outline">Réserver</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Messagerie -->
+        <section class="messaging-panel">
+          <h2 class="column-title">Messagerie</h2>
+          <button type="button" class="btn-new-msg">Nouveau message</button>
+          <div class="messages-stack">
+
+            <div class="msg-card">
+              <span class="msg-avatar">👤</span>
+              <div class="msg-text">
+                <h3>Dr Martin</h3>
+                <p>Confirmation de prêt</p>
+              </div>
+            </div>
+
+            <div class="msg-card">
+              <span class="msg-avatar">👤</span>
+              <div class="msg-text">
+                <h3>Labo chimie</h3>
+                <p>Demande d'information</p>
+              </div>
+            </div>
+
+            <div class="msg-card">
+              <span class="msg-avatar">👤</span>
+              <div class="msg-text">
+                <h3>Service UBE</h3>
+                <p>Validation du compte...</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
